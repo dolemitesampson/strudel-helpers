@@ -73,28 +73,4 @@
     return out;
   }
 
-  ═════════════════════════════════════════════════════════════
-
-  USAGE IN STRUDEL
-  ───────────────────────────────────────────────────────────────
-
-  const guitar = {
-    notes: {
-      a: "5 5 5 7 5 7",
-      b: "4 4 4 6 4 6",
-      c: "3 3 3 7 3 7"
-    },
-    effects: (p) => p.scale("Eb:major")
-                     .sound("triangle")
-                     .delay(0.3)
-                     .gain(3)
-                     .attack(.1)
-                     .decay(.1)
-                     .sustain(.25)
-                     .release(.2)
-                     .pan(sine.slow(2))
-  };
-
-  const gtr = loadInstrument(guitar);
-
-  ═════════════════════════════════════════════════════════════
+ 
